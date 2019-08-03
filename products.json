@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Nike 1001",
+    "price": "2500",
+    "brand": "Nike",
+    "material": "Foam",
+    "size": "6,7,8,9",
+    "category": "Shoes",
+    "url": "images/product2.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Addidas 1001",
+    "price": "2800",
+    "brand": "Addidas",
+    "material": "Polyster",
+    "size": "6,7,8",
+    "category": "Sneakers",
+    "url": "images/product1.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Fila 1001",
+    "price": "2200",
+    "brand": "Fila",
+    "material": "Foam",
+    "size": "6,7,9",
+    "category": "Loafers",
+    "url": "images/product3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "D&G 1001",
+    "price": "3000",
+    "brand": "D&G",
+    "material": "Leather",
+    "size": "6,7,8,9",
+    "category": "Boots",
+    "url": "images/product4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Converse 1001",
+    "price": "2100",
+    "brand": "Converse",
+    "material": "Foam",
+    "size": "6,7,8,9",
+    "category": "Shoes",
+    "url": "images/product5.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Nike 1001",
+    "price": "2400",
+    "brand": "Nike",
+    "material": "Polyster",
+    "size": "6,7,8,9",
+    "category": "Sneakers",
+    "url": "images/product6.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Vans 1001",
+    "price": "2500",
+    "brand": "Vans",
+    "material": "foam",
+    "size": "6,7,8,9",
+    "category": "Loafers",
+    "url": "images/product7.jpg"
+  },
+  {
+    "id": 8,
+    "name": "NB 1001",
+    "price": "2500",
+    "brand": "NB",
+    "material": "Leather",
+    "size": "6,7,8,9",
+    "category": "Boots",
+    "url": "images/product8.jpg"
+  }
+]

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>FootLoose</title>
+    <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+    <!-- Link CSS-->
+    <link type="text/css" href="style.css" rel="stylesheet" />
+    <!-- Link FontAwesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Start of Navbar-->
+      <div class="nav">
+        <span id="nav-span">
+          <button class="round-btn" id="login-register">
+            Login / Register
+          </button>
+        </span>
+        <img src="/images/logo.png" alt="logo" class="nav-logo" />
+        <div class="cart-icon">
+          <i class="fa fa-shopping-bag" id="cart-icon" aria-hidden="true"></i>
+          <p class="quantity" id="cart-items">0</p>
+        </div>
+      </div>
+      <!-- End of Navbar-->
+
+      <!-- Banner Image-->
+      <div class="cover">
+        <div class="cover-box">
+          <h2 class="cover-title">Shoes for every occassion</h2>
+          <a class="round-btn" href="#products">
+            Shop Now
+          </a>
+        </div>
+      </div>
+      <!--End of Banner-->
+
+      <!--Categories-->
+      <div class="categories">
+        <button class="category btn active" id="all">All Products</button>
+        <button class="category btn" id="shoes">Shoes</button>
+        <button class="category btn" id="boots">Boots</button>
+        <button class="category btn" id="sneakers">Sneakers</button>
+        <button class="category btn" id="loafers">Loafers</button>
+      </div>
+      <!-- End of Categories-->
+
+      <div class="category-title" id="category-title">
+        <h1>All Products</h1>
+      </div>
+      <!-- Products-->
+      <div class="products" id="products">
+        <article class="single-product">
+          <div class="img-box">
+            <img
+              src="images/product1.jpg"
+              alt="product 1"
+              class="product-image"
+            />
+            <div class="description">
+              <p>
+                <b>Description</b><br />
+                <b id="brand">Brand:</b> Nike<br />
+                <b id="material">Material:</b> Polyster<br />
+                <b id="size">Size:</b> 7,8,9<br />
+              </p>
+            </div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-title">Product 1</h3>
+            <p class="price">Rs.2000/-</p>
+          </div>
+          <button class="atc">
+            <span><i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
+            Add to Cart
+          </button>
+          <hr />
+        </article>
+      </div>
+      <!--End of Products-->
+      <!--Footer-->
+
+      <div class="footer">
+        <div class="footer-description">
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
+            molestias nisi
+          </p>
+        </div>
+        <div class="footer-social-links">
+          <p class="follow">Follow us on social media</p>
+
+          <span>
+            <a href="https://www.facebook.com/"
+              ><i class="fa fa-facebook social" aria-hidden="true"></i
+            ></a>
+          </span>
+          <span>
+            <a href="https://www.instagram.com/?hl=en"
+              ><i class="fa fa-instagram social" aria-hidden="true"></i
+            ></a>
+          </span>
+          <span>
+            <a href="https://www.pinterest.com/"
+              ><i class="fa fa-pinterest-p social" aria-hidden="true"></i
+            ></a>
+          </span>
+          <span>
+            <a href="https://twitter.com/?lang=en"
+              ><i class="fa fa-twitter social" aria-hidden="true"></i
+            ></a>
+          </span>
+        </div>
+      </div>
+      <!--End of Footer-->
+
+      <!-- Login Modal -->
+
+      <div class="login-modal" id="login-modal">
+        <span class="cart-close" id="login-close">
+          <i class="fa fa-window-close"></i>
+        </span>
+        <div class="login-container" id="login-container">
+          <div class="form-container sign-up-container">
+            <form>
+              <h1>Create Account</h1>
+              <input type="text" placeholder="Name" id="name" required />
+              <input
+                type="email"
+                placeholder="Email"
+                id="register-email"
+                required
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                id="register-password"
+                required
+              />
+              <button class="round-btn" id="register">
+                Sign Up
+              </button>
+            </form>
+          </div>
+
+          <div class="form-container sign-in-container">
+            <form action="#">
+              <h1>Sign in</h1>
+              <input
+                type="email"
+                placeholder="Email"
+                id="login-email"
+                required
+              />
+              <input
+                type="password"
+                placeholder="Password"
+                id="login-password"
+                required
+              />
+              <button class="round-btn" id="login">
+                Sign In
+              </button>
+            </form>
+          </div>
+          <div class="overlay-container">
+            <div class="overlay">
+              <div class="overlay-panel overlay-left">
+                <h1>Welcome Back!</h1>
+                <p>
+                  To keep connected with us please login with your personal info
+                </p>
+                <button class="round-btn ghost" id="signIn">Sign In</button>
+              </div>
+              <div class="overlay-panel overlay-right">
+                <h1>Hello, Friend!</h1>
+                <p>Enter your personal details and start journey with us</p>
+                <button class="round-btn ghost" id="signUp">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- End of Login Modal-->
+
+      <!--Cart-->
+      <div class="cart-overlay" id="cart-overlay">
+        <div class="cart" id="cart">
+          <span class="cart-close" id="close-cart">
+            <i class="fa fa-window-close"></i>
+          </span>
+          <h2>Your Cart</h2>
+          <div class="cart-content" id="cart-content">
+            <!--<div class="cart-item">-->
+          </div>
+          <div class="cart-footer">
+            <h3>Total: Rs <span class="total" id="cart-total">0/-</span></h3>
+            <button class="checkout round-btn " id="checkout">
+              Checkout
+            </button>
+            <button class="clear round-btn" id="clear-cart">
+              Clear Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--End of Cart-->
+
+      <!--Checkout Form-->
+      <div class="checkout-modal" id="checkout-modal">
+        <div class="checkout-container" id="checkout-container">
+          <div class="checkout-form-container">
+            <span id="close-checkout">
+              &times;
+            </span>
+            <form action="#">
+              <h1>Checkout Form</h1>
+              <div class="checkout-content" id="checkout-content">
+                <!--checkout-items-->
+              </div>
+              <h4 id="checkout-total">Total</h4>
+              <input type="text" placeholder="Full Name" id="fname" required />
+              <input
+                type="text"
+                placeholder="Address Line 1"
+                id="add1"
+                required
+              />
+              <input
+                type="text"
+                placeholder="Address Line 2"
+                id="add2"
+                required
+              />
+              <button class="round-btn" id="finish">Checkout</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- End of Checkout Form-->
+      <div class="thankyou-modal" id="thankyou-modal">
+        <div class="thankyou-container">
+          <img src="images/thank-you.png" alt="thank-you" />
+          <span id="close-thankyou">
+            &times;
+          </span>
+        </div>
+      </div>
+
+      <!--Responsive Form-->
+      
+    <script type="module" src="/scripts/main.js"></script>
+  </body>
+</html>
